@@ -1,0 +1,23 @@
+body {
+  background-image: radial-gradient(
+    circle,
+    #15181b,
+    #13171a,
+    #111619,
+    #0e1517,
+    #0b1416
+  );
+}
+.cd {
+  box-shadow: 0 4px 8px 0 rgba(93, 172, 192, 0.493),
+    0 6px 20px 0 rgba(99, 207, 221, 0.19);
+  transition: 0.1s;
+}
+.cd:hover {
+  transform: scale(1.1);
+}
+
+.reglog {
+  box-shadow: 0 4px 8px 0 rgba(93, 172, 192, 0.493),
+    0 6px 20px 0 rgba(99, 207, 221, 0.19);
+}
