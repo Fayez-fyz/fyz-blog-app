@@ -150,7 +150,7 @@ const SinglePost = ({
                           <Avatar
                             size={40}
                             className="mb-1 mr-3"
-                            src={imageSource(posts.postedBy)}
+                            src={imageSource(c.postedBy)}
                           />
 
                           <b className="mx-2">{c.postedBy.name}</b>
