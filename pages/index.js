@@ -44,10 +44,12 @@ const Home = ({ posts }) => {
 };
 
 export async function getServerSideProps() {
-  const { data } = await axios.get("/posts");
-  return {
+  const  data  = await fetch(`${process.env.NEXT_PUBLIC_API}/posts`)
+  const posts = await data.json()
+  // console.log(posts)
+ return {
     props: {
-      posts: data,
+      posts
     },
   };
 }
