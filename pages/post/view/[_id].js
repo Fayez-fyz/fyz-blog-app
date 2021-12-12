@@ -114,10 +114,12 @@ const OnePost = ({ posts }) => {
   );
 };
 export async function getServerSideProps(ctx) {
-  const { data } = await axios.get(`/post/${ctx.params._id}`);
+  const data  = await fetch(`${process.env.NEXT_PUBLIC_API}/post/${ctx.params._id}`);
+  const posts = await data.json()
+   // console.log(posts)
   return {
     props: {
-      posts: data,
+      posts
     },
   };
 }
