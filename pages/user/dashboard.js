@@ -72,6 +72,7 @@ const dashboard = () => {
         image,
       });
       // console.log("created post", data);
+      setok(false)
       if (data.error) {
         toast.error(data.error);
       } else {
@@ -214,7 +215,7 @@ const dashboard = () => {
         <div className="row py-3">
           <div className="col-md-12">
             <div className="d-flex justify-content-center">
-              <button className="btn btn-primary" onClick={() => setok(true)}>
+              <button className="btn btn-outline-primary" onClick={() => setok(true)}>
                 <PlusSquareOutlined className=" fs-3" />
                 <span className="fs-6"> Create Post</span>
               </button>

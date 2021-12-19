@@ -55,10 +55,12 @@ const SinglePost = ({
                 alt={posts.postedBy.name}
               />
 
+              
               <div className="card-body">
                 <h4 className="card-title text-white mt-3">{posts.title}</h4>
                 <p className="card-text">{renderHTML(posts.content)}</p>
               </div>
+              
               <div className="card-footer">
                 <div className="d-flex">
                   {state &&
